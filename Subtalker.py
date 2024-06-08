@@ -201,7 +201,7 @@ def Talk():
 
 window = Tk()
 window.title("SubTalker")
-icon = PhotoImage(file=r'C:\Users\bagie\Pictures\PIC\Hitagi\Emotes\HitaCube.png')
+icon = PhotoImage(file='\HitaCube.png')
 
 window.config(background='#4A4A4A')
 window.iconphoto(True, icon)
