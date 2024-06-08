@@ -5,8 +5,10 @@ Use \n to create multiple lines
 Comes with a .ini file with this format
 
 {
+
     "NameColor": {
         "Default": [0, 0, 0]
+        
     },
     "NameStroke": {
         "Default": [255, 255, 255]
@@ -14,6 +16,7 @@ Comes with a .ini file with this format
     "NameFont": {
         "Default": "Arial"
     }
+    
 }
 
 Customized by adding a shared Key among the Color/Stroke/Font with a RGB/Font-name Value
