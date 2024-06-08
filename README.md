@@ -1,5 +1,7 @@
 A script to automatically caption/subtitle a random segment of a random image file from a given directory, with customizable styles
 
+Enter is a hotkey for copy to clipboard
+
 Use \n to create multiple lines
 
 Comes with a .ini file with this format
