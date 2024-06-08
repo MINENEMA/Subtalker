@@ -201,12 +201,10 @@ def Talk():
 
 window = Tk()
 window.title("SubTalker")
-icon = PhotoImage(file='\HitaCube.png')
 
 window.config(background='#4A4A4A')
-window.iconphoto(True, icon)
 
-folder_button = Button(window, text='Choose Folder', command=choose_folder, font=('Magra', 16, 'bold'), fg="white", background='gray', activebackground='gray', activeforeground='gray', width=24)
+folder_button = Button(window, text='Choose Folder', command=choose_folder, font=('Arial', 16, 'bold'), fg="white", background='gray', activebackground='gray', activeforeground='gray', width=24)
 folder_button.grid(row=0, column=0, padx=5, pady=5, sticky="w")
 
 Name = StringVar(window)
@@ -217,17 +215,17 @@ footer_label = tkinter.Label(window, textvariable=footer_text, bd=1, relief=tkin
 footer_label.grid(row=3, column=0, columnspan=2, sticky="we", padx=5, pady=5)
 
 drop = OptionMenu(window, Name, *Names)
-drop.config(font=('Magra', 16, 'bold'))
+drop.config(font=('Arial', 16, 'bold'))
 drop.config(fg="white")
 drop.config(background='gray')
 drop.config(activeforeground='gray')
 drop.config(width=30)
 drop.grid(row=0, column=1, padx=5, pady=5, sticky="we")
 
-entry = Entry(window, font=('Magra', 20, 'bold'))
+entry = Entry(window, font=('Arial', 20, 'bold'))
 entry.grid(row=1, column=0, columnspan=2, padx=5, pady=5, sticky="we")
 
-button = Button(window, text='Copy to Clipboard', command=Talk, font=('Magra', 20, 'bold'), fg="white", background='gray', activebackground='gray', activeforeground='gray', width=23)
+button = Button(window, text='Copy to Clipboard', command=Talk, font=('Arial', 20, 'bold'), fg="white", background='gray', activebackground='gray', activeforeground='gray', width=23)
 button.grid(row=2, column=0, columnspan=2, padx=5, pady=5, sticky="we")
 
 window.bind('<Return>', lambda event=None: button.invoke())
